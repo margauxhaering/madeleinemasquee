@@ -158,69 +158,6 @@ a.active {
   color: white;
   background-color: #66492B;
 }
-
-section {
-  position: relative;
-  padding: 100px 0;
-}
-
-
-section h2.section-heading {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-section h3.section-subheading {
-  font-size: 16px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: none;
-  font-style: italic;
-  font-weight: 400;
-  margin-bottom: 75px;
-}
-
-
-#sidebar {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    min-width: 250px;
-    max-width: 250px;
-    background-color: rgba(255, 255, 255 / 5%);
-    box-shadow: 0px 0px 10px #12e2c0;
-    backdrop-filter : blur(20px);
-    color: #fff !important;
-    transition: all 0.3s;
-    font-size: 16px
-}
-
-#sidebar a{
-    color: white;
-}
-
-#sidebar a:hover, a:focus{
-    text-decoration: none;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-}
-
-
-#sidebar ul li a {
-    padding: 10px 20px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #24d8ba;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #1fc4a8;
-}
-
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
