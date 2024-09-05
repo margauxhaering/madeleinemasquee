@@ -1,31 +1,6 @@
 @import url("bootstrap.min.css");
 @import url("font.css");
 
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 50%;
-        padding: 10px;
-    }
-
-    .column {
-        width: 50%;
-    }
-}
-
-/* Styles for medium screens (tablets, between 600px and 1024px) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .column {
-        width: 50%; /* Two columns layout */
-    }
-}
-
-/* Styles for larger screens (desktops, above 1024px) */
-@media only screen and (min-width: 1025px) {
-    .column {
-        width: 100%; /* Three columns layout */
-    }
-}
-
 
 .active{
   background-color: #66492B;
@@ -182,34 +157,6 @@ a.active {
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
   background-color: #66492B;
-}
-@media (min-width: 768px) {
-  .navbar-custom {
-    background-color: #ffffff;
-    padding: 10px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    border: none;
-  }
-  .navbar-custom .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-custom.affix {
-    background-color: #ffffff;
-    padding: 10px 0;
-  }
-/*  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
-  }*/
 }
 
 section {
