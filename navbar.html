@@ -5,6 +5,9 @@
     switch(page) {
     case 'index':
         break;
+    case 'home':
+        $(".nav li:nth-child(1)").addClass("active")
+        break;
     case 'tarifs':
         $(".nav li:nth-child(2)").addClass("active")
         break;
@@ -31,6 +34,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="index.html"></a>
+                    </li>
+                    <li>
+                        <a href="home.html">Home</a>
                     </li>
                     <li>
                         <a href="tarifs.html">Tarifs</a>
