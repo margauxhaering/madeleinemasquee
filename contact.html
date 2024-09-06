@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>M2 Gallery - contact</title>
+
+    <!-- CSS -->
+    <link href="/m2gallery/assets/css/main.css" rel="stylesheet">
+
+
+    <!-- javascript -->
+    <script src="/m2gallery/assets/js/jquery.min.js"></script>
+    <script src="/m2gallery/assets/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="page-top" class="index" style="background-image:url('/m2gallery/assets/img/bgd.jpg')">
+<div id="includenavbar"></div>
+
+<div id="content" class="container">
+
+<div class="row row-offcanvas row-offcanvas-left">
+
+
+    <div id="main" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+        <div class="col-md-12">
+      <div id ="intro" class="intro-heading col-md-12">
+      <br><br><br>  <h1 class="main" style="margin-top:40px;">Keep in touch !</h1>
+
+
+      <div class="contact-container">
+
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true" style="font-size: 1em;width: 25px;color:white; line-height: 25px;"></span><a href="mailto:contact.m2gallery@gmail.com">contact.m2gallery@gmail.com</a><br>
+                  <span class="glyphicon glyphicon-earphone" aria-hidden="true" style="font-size: 1em;width: 25px; color:white; line-height: 25px;margin-top:10px;"></span>+337 88 22 77 48<br>
+                  <span class="fa fa-map-marker fa-1x" style="font-size: 1em;width: 25px; color:white; line-height: 25px;margin-top:10px;"></span>Marseille & Monaco<br>
+                  <span class="fa fa-brands fa-instagram" style="font-size: 1em;width: 25px; color:white; line-height: 25px;margin-top:10px;"></span><a href="https://www.instagram.com/itsmzrgaux/">Margaux</a> &nbsp;&nbsp;<span class="fa fa-brands fa-instagram" style="font-size: 1em;width: 25px; color:white; line-height: 25px;margin-top:10px;"></span><a href="https://www.instagram.com/maxencegimzia/">Maxence</a><br>
+    </div>
+</div>
+
+</div>
+</div>
+
+<script src="/m2gallery/assets/js/bootstrap.min.js"></script>
+<script src="/m2gallery/assets/js/bootstrap-table.min.js"></script>
+    <script>
+            $("#includenavbar").load("/m2gallery/navbar.html");
+            document.addEventListener('DOMContentLoaded', function () {
+                const titleElement = document.getElementById('maintitle');
+                function showTitle() {
+                    for (let i = 0; i < titleElement.length; i++) {
+                        setTimeout(titleElement, i * 100, i);
+                    }
+                }
+                showTitle();
+            });
+
+
+    </script>
+
+</body>
+</html>
