@@ -99,7 +99,6 @@
 </body>
 
 <script>
-
 (function ($) {
 
 "use strict";
@@ -160,6 +159,12 @@ $.each(sectionArray, function(index, value){
         }, 300)
     });
 
+});
+
+$(document).ready(function(){
+    $('#sidebarMenu .nav-item .nav-link:link').addClass('inactive');
+    $('#sidebarMenu .nav-item .nav-link').eq(0).addClass('active');
+    $('#sidebarMenu .nav-item .nav-link:link').eq(0).removeClass('inactive');
 });
 
 
