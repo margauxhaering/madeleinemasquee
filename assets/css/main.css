@@ -420,9 +420,6 @@ h5 {
     #commande2 {
       font-size: 1em;
     }
-    #tata {
-      font-size: 1em;
-    }
 }
 
 
@@ -468,15 +465,11 @@ h5 {
 
 }
 
-#tata {
-  font-size: 1em;
-}
-
     #commande {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
     #commande2 {
-      font-size: 1em;
+      font-size: .8em;
     }
 }
 }
