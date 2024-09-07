@@ -77,18 +77,21 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   text-align: left;
 }
-
-p {
-  font-size: 20px;
-  text-align: left;
+h6 {
+  font-weight: 800;
 }
+
+
+
+}
+
+
 
 p.large {
   font-size: 18px;
@@ -383,10 +386,12 @@ p {
     font-size: 1rem; /* Default size for larger screens */
 }
 h5 {
-  font-size: 1.3rem;
+  font-size: .8rem;
 }
 
-
+#tata {
+  font-size: 1.4em;
+}
 
 
 @media (min-width: 700px) and (max-width:900px) {
@@ -413,6 +418,9 @@ h5 {
       font-size: 1.5em;
     }
     #commande2 {
+      font-size: 1em;
+    }
+    #tata {
       font-size: 1em;
     }
 }
@@ -460,7 +468,9 @@ h5 {
 
 }
 
-
+#tata {
+  font-size: 1em;
+}
 
     #commande {
       font-size: 1.5em;
