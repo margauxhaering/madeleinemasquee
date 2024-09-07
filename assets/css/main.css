@@ -369,29 +369,6 @@ a.active {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .custom-btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-
-}
-
-
-
-h1.main {
-    font-size: 3rem; /* Default size for larger screens */
-}
-p {
-    font-size: 1rem; /* Default size for larger screens */
-}
-h5 {
-  font-size: .8rem;
-}
-
-#tata {
-  font-size: 1.4em;
-}
 
 
 @media (min-width: 700px) and (max-width:900px) {
