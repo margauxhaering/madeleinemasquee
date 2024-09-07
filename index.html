@@ -8,8 +8,9 @@
 
     <title> La Madeleine Masquee</title>
 
-    <!-- CSS <link href="/m2gallery/assets/css/main.css" rel="stylesheet"> -->
     <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-icons.css" rel="stylesheet">
     <!-- javascript -->
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
@@ -21,12 +22,41 @@
 
     <!-- Header -->
     <header>
+
+              <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse p-0">
+
+                  <div class="position-sticky sidebar-sticky d-flex flex-column justify-content-center align-items-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/assets/img/mmm_logo.png" class="logo-image img-fluid" align="">
+                    </a>
+
+                      <ul class="nav flex-column">
+                          <li class="nav-item">
+                              <a class="nav-link click-scroll" href="index.html">Home</a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link click-scroll" href="tarifs.html">Tarifs</a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link click-scroll" href="commander.html">Commander</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+
+<div class="col-md-9 ms-sm-auto col-lg-9 p-0">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading col-md-12">
                   <h1 class="main">Gamme Classique </h1> </div>
                   <div class="col-md-12"style="margin-top:20px;">
-                    <p> N'hesitez pas a visiter notre compte insta <a href="https://www.instagram.com/lamadeleinemasquee/">@lamadeleinemasquee</a> !</p></div>
+                    <p> Visitez notre compte insta <a href="https://www.instagram.com/lamadeleinemasquee/">@lamadeleinemasquee</a> !</p></div>
                 </div>
                 <div class="gallery" style="margin-top: 50px;">
 
@@ -64,119 +94,77 @@
 
             </div>
 
-            <div class="container">
-                <div class="intro-text">
-                    <div class="intro-heading col-md-12">
-                      <h1 class="main">Tarifs </h1> </div>
-
-                    </div>
-                    <div class="col-sm-12" style="margin-top:20px;text-align:left;">
-                    <h3 style="margin-top:80px;text-align:center;"> Coffrets de grandes </h3>
-
-                  <div class="col-sm-4"style="margin-top:20px;">
-                    <p>
-                    <h5><b> - Decouverte </b></h5> invariable, 8 madeleines classiques
-                    <br>
-                    <h5> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Personnalisable</b></h5> <br>
-                  <h5><b>  - Delice </b></h5> 16 madeleines au choix <br><br>
-                  <h5><b>  - Expert </b></h5> 25 madeleines au choix <br><br>
-                  <h5> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Unite</b></h5> <br>
-    </p>
-                  </div>
-
-                  <div class="col-sm-2" style="margin-top:20px;">
-                    <p>
-                      <h5> 12 €</h5> <br> <h5>14 €</h5> <br><h5> 27 € </h5><br><br><br><h5> 40 € </h5><br><br><h5> 1.7 € </h5>
-                    </p>
-                  </div>
-
-                  <div class="col-sm-6">
-    <!----------- empty -->
-                  </div>
-
-                  </div>
-
-
-                  <div class="col-sm-12"style="margin-top:20px;text-align:left;">
-                  <h3 style="margin-top:80px;text-align:center;"> Coffrets de minis </h3>
-
-                <div class="col-sm-4"style="margin-top:20px;">
-                  <p>
-                  <h5><b> - Originel </b></h5> invariable, 20 originelles
-                  <br>
-                <h5><b>  - Douceur </b></h5> 20 minis au choix <br><br>
-                  <h5> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 40 minis au choix</b></h5> <br>
-                  <h5> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 60 minis au choix</b></h5> <br>
-                  <h5> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 80 minis au choix</b></h5> <br>
-    </p>
-                </div>
-
-                <div class="col-sm-2" style="margin-top:20px;">
-                  <p>
-                    <h5> 10 €</h5> <br> <h5>14 €</h5> <br><br><h5> 26 € </h5><br><h5> 38 € </h5><br><h5> 50 € </h5>
-                  </p>
-                </div>
-
-                <div class="col-sm-6">
-    <!----------- empty -->
-                </div>
-
-                </div>
-
-
-
-                <div class="col-md-12"style="margin-top:20px;text-align:left;">
-                <h3 style="margin-top:80px;text-align:center;"> Coffrets de moyennes </h3>
-
-              <div class="col-sm-4"style="margin-top:20px;">
-                <p>
-                <h5><b> - Gourmand </b></h5> 25 madeleines au choix
-                <br>
-                <h5> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unite </b></h5> <br>
-    </p>
-              </div>
-
-              <div class="col-sm-2" style="margin-top:20px;">
-                <p>
-                  <h5> 26 €</h5> <br> <h5>1.1 €</h5>
-                </p>
-              </div>
-
-              <div class="col-sm-6">
-    <!----------- empty -->
-              </div>
-
-              </div>
-
-              <div class="col-sm-12"style="margin-top:20px;text-align:left;">
-              <h3 style="margin-top:80px;text-align:center;"> Supplements </h3>
-
-            <div class="col-sm-4"style="margin-top:20px;">
-              <p>
-              <h5><b> - Coffret cadeau </b>
-
-    </p>
-            </div>
-
-            <div class="col-sm-2" style="margin-top:20px;">
-              <p>
-                <h5> 7 €</h5>
-              </p>
-            </div>
-
-            <div class="col-sm-6">
-    <!----------- empty -->
-            </div>
-
-            </div>
-
-
-                </div>
+</div>
 
     </header>
 
 </body>
+
 <script>
+
 $("#includenavbar").load("/navbar.html");
+(function ($) {
+
+"use strict";
+
+  // MENU
+  $('#sidebarMenu .nav-link').on('click',function(){
+    $("#sidebarMenu").collapse('hide');
+  });
+
+  // CUSTOM LINK
+  $('.smoothscroll').click(function(){
+    var el = $(this).attr('href');
+    var elWrapped = $(el);
+    var header_height = $('.navbar').height();
+
+    scrollToDiv(elWrapped,header_height);
+    return false;
+
+    function scrollToDiv(element,navheight){
+      var offset = element.offset();
+      var offsetTop = offset.top;
+      var totalScroll = offsetTop-navheight;
+
+      $('body,html').animate({
+      scrollTop: totalScroll
+      }, 300);
+    }
+  });
+
+})(window.jQuery);
+
+//jquery-click-scroll
+
+var sectionArray = [1, 2, 3, 4, 5];
+
+$.each(sectionArray, function(index, value){
+
+     $(document).scroll(function(){
+         var offsetSection = $('#' + 'section_' + value).offset().top - 0;
+         var docScroll = $(document).scrollTop();
+         var docScroll1 = docScroll + 1;
+
+
+         if ( docScroll1 >= offsetSection ){
+             $('#sidebarMenu .nav-link').removeClass('active');
+             $('#sidebarMenu .nav-link:link').addClass('inactive');
+             $('#sidebarMenu .nav-item .nav-link').eq(index).addClass('active');
+             $('#sidebarMenu .nav-item .nav-link').eq(index).removeClass('inactive');
+         }
+
+     });
+
+    $('.click-scroll').eq(index).click(function(e){
+        var offsetClick = $('#' + 'section_' + value).offset().top - 0;
+        e.preventDefault();
+        $('html, body').animate({
+            'scrollTop':offsetClick
+        }, 300)
+    });
+
+});
+
+
 </script>
 </html>
