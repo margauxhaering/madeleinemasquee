@@ -332,6 +332,8 @@ a.active {
 .gallery-item:hover {
     transform: scale(1.05);
 }
+
+/
 /*---------------------------------------
   RESPONSIVE STYLES
 -----------------------------------------*/
