@@ -249,27 +249,27 @@ a.active {
 }
 
 
-.navbar-custom {
+.navbar-custom2 {
   background-color: #ffffff;
   border-color: transparent;
 }
-.navbar-custom .navbar-brand {
+.navbar-custom2 .navbar-brand {
   color: #66492B;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, cursive;
   letter-spacing: .15em;
   text-transform: uppercase;
   font-weight: 700;
 }
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
+.navbar-custom2 .navbar-brand:hover,
+.navbar-custom2 .navbar-brand:focus,
+.navbar-custom2 .navbar-brand:active,
+.navbar-custom2 .navbar-brand.active {
   color: #66492B;
 }
-.navbar-custom .navbar-collapse {
+.navbar-custom2 .navbar-collapse {
   border-color: rgba(255, 255, 255);
 }
-.navbar-custom .navbar-toggle {
+.navbar-custom2 .navbar-toggle {
   background-color: #66492B;
   border-color: #66492B;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -277,11 +277,11 @@ a.active {
   color: #66492B;
   font-size: 12px;
 }
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
+.navbar-custom2 .navbar-toggle:hover,
+.navbar-custom2 .navbar-toggle:focus {
   background-color: #66492B;
 }
-.navbar-custom .nav li a {
+.navbar-custom2 .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -289,19 +289,19 @@ a.active {
   color: #66492B;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
+.navbar-custom2 .nav li a:hover,
+.navbar-custom2 .nav li a:focus {
   color: #66492B;
   outline: none;
   box-shadow: inset 350px 0 0 0 #F3E7C9;
 }
-.navbar-custom .navbar-nav > .active > a {
+.navbar-custom2 .navbar-nav > .active > a {
   border-radius: 0;
   color: #66492B;
   background-color: #F3E7C9;
 }
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
+.navbar-custom2 .navbar-nav > .active > a:hover,
+.navbar-custom2 .navbar-nav > .active > a:focus {
   color: white;
   background-color: #66492B;
 }
@@ -366,18 +366,11 @@ a.active {
     font-size: 18px;
   }
 
-  .section-padding,
-  .hero-section {
-    padding: 50px 25px;
-  }
 
   .custom-block {
     display: none;
   }
 
-  .navbar {
-    background-color: var(--dark-color);
-  }
 
   .navbar-expand-lg .navbar-nav {
     padding-bottom: 30px;
