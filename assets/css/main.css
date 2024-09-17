@@ -110,6 +110,155 @@ a.active {
 
 
 
+
+.container2 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.grid-1-5 {
+  border: 2px solid #f5e4c9;
+  min-height: 200px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+
+
+  @media screen and (max-width: 700px) {
+    flex: 0 1 50%;
+    gap:5px;
+  }
+
+  @media screen and (min-width: 800px) {
+    flex: 0 1 30%;
+  }
+
+  @media screen and (min-width: 1120px) {
+    flex: 0 1 40%;
+  }
+}
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1-5 {
+  border: 2px solid #f5e4c9;
+  min-height: 200px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+
+  @media screen and (max-width: 700px) {
+    & {
+      float: left;
+      width: 35%;
+    }
+    &:nth-child(odd) {
+      clear: left;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    & {
+      width: 30%;
+    }
+    &:nth-child(3n+1) {
+      clear: left;
+    }
+    &:nth-child(odd) {
+      clear: none;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+    & {
+       width: 40%;
+    }
+    &:nth-child(odd), &:nth-child(3n+1) {
+       clear: none;
+    }
+  }
+
+}
+.grid-1-5:hover {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.001)),url('/assets/img/bgd.jpg');
+
+  border-top: 2px solid #f5e4c9;
+  border-bottom: 2px solid #f5e4c9;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 1);
+  transform: scale(1.025);
+  z-index: 2;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    background-color: #f5e4c9;
+    top: -2px;
+    bottom: -2px;
+    width: 2px;
+  }
+
+  &:before {
+    left: -2px;
+  }
+  &:after {
+    right: -2px;
+  }
+}
+
+
+
+
+
+.history-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full height of the viewport */
+    /*  background-color: #f5f5f5; /* Light background for contrast */
+    }
+
+    /* Left column: Image background */
+    .image-column {
+    /*  background-image: url('../img/im2.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      flex: 1;
+      height: 110%; /* Full height to match the right column */
+      position: relative;
+    }
+
+    /* Right column: Text content */
+    .text-column {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+      padding: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-column h1 {
+      font-size: 3rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .text-column p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+
 /*---------------------------------------
   CUSTOM PROPERTIES
 -----------------------------------------*/
@@ -375,14 +524,19 @@ a.active {
     h1.main {
         font-size: 2rem; /* Smaller size for tablets and small laptops */
     }
+    h1{
+        font-size: 1rem; /* Smaller size for mobile phones */
+    }
     p {
-      font-size: .8rem
+      font-size: .7rem
     }
     h5 {
       font-size: .8rem;
     }
 
-
+    .image-column {
+      height: 150vh; 
+    }
 
     .gallery, .gallery2{
         grid-template-columns: repeat(4, 1fr);
@@ -405,12 +559,18 @@ a.active {
     h1.main {
         font-size: 1.5rem; /* Smaller size for mobile phones */
     }
+    h1{
+        font-size: 1rem; /* Smaller size for mobile phones */
+    }
 
     p {
       font-size: .7rem
     }
     h5 {
       font-size: .7rem;
+    }
+    h4 {
+      font-size: 1rem;
     }
 
     .gallery, .gallery2 {
@@ -443,10 +603,24 @@ a.active {
 }
 
     #commande {
-      font-size: .8em;
+      font-size: .9em;
     }
     #commande2 {
-      font-size: .5em;
+      font-size: .6em;
     }
+
+
+    .history-section {
+      flex-direction: column;
+    }
+
+    .image-column {
+      height: 50vh; /* Reduce image height on mobile */
+    }
+
+    .text-column {
+      height: auto;
+    }
+
 }
 }
