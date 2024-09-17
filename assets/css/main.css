@@ -244,12 +244,13 @@ a.active {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-top: 0;
     }
 
     .text-column h1 {
       font-size: 3rem;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .text-column p {
@@ -555,7 +556,7 @@ a.active {
 
 
 
-@media (max-width: 700px) {
+@media (min-width: 400px) and (max-width: 700px) {
     h1.main {
         font-size: 1.5rem; /* Smaller size for mobile phones */
     }
@@ -623,4 +624,89 @@ a.active {
     }
 
 }
+
+
+
+@media (max-width: 400px) {
+    h1.main {
+        font-size: 1rem; /* Smaller size for mobile phones */
+    }
+    h1{
+        font-size: .9rem; /* Smaller size for mobile phones */
+    }
+
+    p {
+      font-size: .2rem
+    }
+    h5 {
+      font-size: .5rem;
+    }
+    h4 {
+      font-size: .8rem;
+    }
+
+    .gallery, .gallery2 {
+        grid-template-columns: repeat(3, 1fr); /* 2 columns on smaller screens */
+        width: 80%;
+        justify-content: center;
+}
+
+.gallery-item{
+  justify-content: center;
+    &::after {
+       counter-increment: grid;
+       content: counter(grid);
+     }
+
+    &:last-child:nth-child(3n - 1) {
+        grid-column-end: -1;
+}
+
+    &:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 2;
+        justify-content: center;
+}
+
+&:last-child:nth-child(3n - 2) {
+  grid-column-end: 3;
+}
+
+
+}
+
+    #commande {
+      font-size: .9em;
+    }
+    #commande2 {
+      font-size: .6em;
+    }
+
+
+    .history-section {
+      align-items: center;
+
+    }
+
+
+    .image-column {
+        width: 0;
+
+    }
+
+    .text-column {
+      padding: 80px;
+      width: 90vh;
+      text-align: left;
+      padding-top: 10px;
+    }
+    .text-column p{
+      font-size: 12px;
+    }
+    .text-column h1{
+      font-size: 30px;
+    }
+
+}
+
+
 }
