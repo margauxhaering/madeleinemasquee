@@ -470,7 +470,7 @@ a.active {
 
 .gallery2 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     width: 800px;
     margin: 0 auto;
@@ -636,7 +636,7 @@ a.active {
     }
 
     p {
-      font-size: .2rem
+      font-size: .8rem
     }
     h5 {
       font-size: .5rem;
