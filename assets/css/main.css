@@ -1236,6 +1236,146 @@ Pre Loader
 }
 
 
+
+/* Main profile container */
+        .profile-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Profile header section */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dbdbdb;
+            margin-bottom: 20px;
+        }
+
+        .profile-header .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .profile-header .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-header .profile-info {
+            flex: 1;
+        }
+
+        .profile-info .profile-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .profile-info .profile-description {
+            color: #666;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .profile-info .follow-btn {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Grid of posts */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        /* Individual post styling */
+        .insta-post {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .insta-post img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .insta-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .insta-actions i {
+            font-size: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .insta-actions .likes {
+            font-weight: bold;
+            color: #333;
+        }
+
+
+
+        @media (max-width: 480px) {
+                    /* Stack posts in 1 column for small screens */
+                    .posts-grid {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .profile-container {
+                        padding: 15px;
+                    }
+
+                    .profile-header {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .profile-header .profile-pic {
+                        width: 50px;
+                        height: 50px;
+                        margin-bottom: 10px;
+                    }
+
+                    .profile-info .profile-name {
+                        font-size: 16px;
+                    }
+
+                    .profile-info .profile-description {
+                        font-size: 12px;
+                    }
+
+                    .profile-info .follow-btn {
+                        padding: 6px 10px;
+                        font-size: 14px;
+                    }
+                }
+
 /*
 ---------------------------------------------
 responsive
