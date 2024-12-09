@@ -232,7 +232,6 @@ header
 
 .header-area {
   background-color: transparent;
-  border-bottom: 1px solid rgba(250,250,250,0.2);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -251,11 +250,11 @@ header
 }
 
 .header-area .main-nav a.logo {
-  background-image: url(../images/mmm_logo.png);
+  background-image: url(../images/logo2.png);
   width: 200px;
   height: 80px;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -454,7 +453,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #fff;
   display: block;
   position: absolute;
   width: 30px;
@@ -465,7 +464,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -474,7 +473,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #fff;
   display: block;
   position: absolute;
   width: 30px;
@@ -517,7 +516,7 @@ header
 .header-area .main-nav .menu-trigger.active span,
 .header-area .main-nav .menu-trigger.active span:before,
 .header-area .main-nav .menu-trigger.active span:after {
-  background-color: transparent;
+  background-color: #fff;
   width: 100%;
 }
 
@@ -526,11 +525,11 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -538,11 +537,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #1e1e1e;
+  background-color: #fff;
 }
 
 .header-area.header-sticky {
@@ -633,8 +632,9 @@ header
   }
   .header-area .main-nav .nav li {
     width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #e7e7e7;
+    background: transparent;
+    border: 50% !important;
+    border-bottom: 0.5px solid #e7e7e7;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -642,8 +642,8 @@ header
     height: 50px !important;
     line-height: 50px !important;
     padding: 0px !important;
-    border: none !important;
-    background: #f7f7f7 !important;
+    border: 50% !important;
+    background:rgba(250,250,250, 0.7); !important;
     color: #191a20 !important;
   }
   .header-area .main-nav .nav li a:hover {
@@ -700,30 +700,17 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  background-image: url(../images/bgd.jpg);
+  background-image: url(../images/bgdf.jpg);
   height: 100vh;
   padding-top: 200px;
   position: relative;
   overflow: hidden;
 }
 
-.main-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(252, 226, 190, 0.7);
-}
 
-.main-banner > * {
-  position: relative;
-  z-index: 2;
-}
 
 .main-banner .top-text {
-  text-align: center;
+  text-align:left;
 }
 
 .main-banner .top-text h6 {
@@ -817,6 +804,7 @@ Banner Style
   background-position: center center;
   background-size: cover;
   background-image: url(../images/3.jpg);
+  height: 100vh;
   padding: 200px 0px 600px 0px;
   position: relative;
   overflow: hidden;
@@ -842,7 +830,7 @@ Banner Style
   background-position: center center;
   background-size: cover;
   background-image: url(../images/2.jpg);
-  padding: 150px 0px 30px 0px;
+  padding: 10px 0px 30px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -988,6 +976,11 @@ font-size: 30px;
 }
 .main-hist h2{
 font-size: 30px;
+}
+
+.main-hist {
+  background-position: bottom;
+padding: 120px 0 0 0
 }
 
 .main-hist, .main-carte, .main-contact, .main-carte, .main-shop{
@@ -1243,13 +1236,17 @@ Pre Loader
             width: 80%;
             max-width: 800px;
             margin: 20px auto;
-            background-color: #fff;
+          background-color: rgba(250,250,250, 0.7);
             border: 1px solid #dbdbdb;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
 
+        .profile-name a{
+          font-size:18px;
+          color:black;
+        }
         /* Profile header section */
         .profile-header {
             display: flex;
@@ -1308,7 +1305,7 @@ Pre Loader
 
         /* Individual post styling */
         .insta-post {
-            background-color: #fff;
+            background-color: rgba(250,250,250, 0.8);
             border: 1px solid #dbdbdb;
             border-radius: 10px;
             overflow: hidden;
@@ -1342,19 +1339,26 @@ Pre Loader
 
 
         @media (max-width: 480px) {
-                    /* Stack posts in 1 column for small screens */
                     .posts-grid {
-                        grid-template-columns: 1fr;
+                        gap: 4px;
+                    }
+                    .profile-name a{
+                      font-size:15px;
+                    }
+
+                    .insta-post img {
+                        height: 80px;
+                        object-fit: cover;
                     }
 
                     .profile-container {
-                        padding: 15px;
+                        padding: 8px;
                     }
 
                     .profile-header {
                         flex-direction: column;
-                        align-items: center;
-                        text-align: center;
+                        align-items: left;
+                        text-align: left;
                     }
 
                     .profile-header .profile-pic {
@@ -1364,16 +1368,17 @@ Pre Loader
                     }
 
                     .profile-info .profile-name {
-                        font-size: 16px;
+                        font-size: 12px;
                     }
 
                     .profile-info .profile-description {
                         font-size: 12px;
                     }
 
-                    .profile-info .follow-btn {
-                        padding: 6px 10px;
-                        font-size: 14px;
+
+
+                    .main-banner .top-text img {
+                      width : 80%;
                     }
                 }
 
@@ -1387,10 +1392,11 @@ responsive
 
 @media (max-width: 767px) {
   .main-banner {
-    padding: 200px 0 400px 0;
+    background-position: 90% bottom;
+    background-size: cover;
   }
   .main-banner ul.categories li a {
-    color: transparent;
+    display: none;
   }
 
   .main-banner .top-text h5 {
@@ -1398,8 +1404,9 @@ responsive
     font-weight: 400;
   }
   .header-area .main-nav a.logo {
-    background-image: url(../images/mmm_logo.png);
+    background-image: url(../images/logo2.png);
     float: left;
+
   }
   .header-area .logo {
     margin-left: 0px;
