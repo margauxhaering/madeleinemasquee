@@ -51,7 +51,6 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="index.html"></a></li>
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="histoire.html">Histoire</a></li>
               <li><a href="carte.html">Carte</a></li>
@@ -74,31 +73,70 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="top-text header-text">
-            <h6>La madeleine de Marseille</h6>
+          <div class="top-text">
             <img src="assets/images/mmm_logo.png" width="100" height="200">
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="top-text header-text">
-            <h5><br><br>La Madeleine Masquee, c'est la premiere madeleine de Marseille. <br> Originale, gourmande, raffinee, <br> Vous n'y trouverez que des bonnes choses...
-              <br><br> Visitez notre compte insta : <a  style="color:#6A5535" href="https://www.instagram.com/lamadeleinemasquee/">@lamadeleinemasquee</a> !
+        <div class="col-lg-5">
+          <div class="top-text">
+            <h5 style="font-weight:bold;"><br><br><br>La Madeleine Masquée, c'est la première madeleine de Marseille. <br><br>Originale, gourmande, raffinée... Vous n'y trouverez que des bonnes choses!
             </h5>
           </div>
+            <ul class="categories">
+              <li><a href="histoire.html"><span class="icon"><i class="fas fa-clock-rotate-left"></i></span>Histoire</a></li>
+              <li><a href="carte.html"><span class="icon"><i class="fas fa-table-list"></i></span> Carte</a></li>
+              <li><a href="tarifs.html"><span class="icon"><i class="fas fa-dollar-sign"></i></span> Tarifs</a></li>
+            </ul>
+
         </div>
-        <div class="col-lg-12">
-          <ul class="categories">
-            <li><a href="histoire.html"><span class="icon"><i class="fas fa-clock-rotate-left"></i></span>Histoire</a></li>
-            <li><a href="carte.html"><span class="icon"><i class="fas fa-table-list"></i></span> Carte</a></li>
-            <li><a href="tarifs.html"><span class="icon"><i class="fas fa-dollar-sign"></i></span> Tarifs</a></li>
-          </ul>
-        </div>
+        <div class="col-lg-7">
+
+          <div class="profile-container">
+              <!-- Profile Header -->
+              <div class="profile-header">
+                  <div class="profile-pic">
+                      <img src="/assets/images/logo.png" alt="Profile Picture">
+                  </div>
+                  <div class="profile-info">
+                      <div class="profile-name"><a href="https://www.instagram.com/lamadeleinemasquee" target="_blank"> lamadeleinemasquee</a>
+</div>
+                </div>
+              </div>
+
+              <!-- Grid of Posts -->
+              <div class="posts-grid">
+                  <!-- Post 1 -->
+                  <div class="insta-post">
+                    <a href="https://www.instagram.com/lamadeleinemasquee" target="_blank">
+<img src="/assets/images/1.png" alt="Post Image">
+</a>
+                  </div>
+
+                  <!-- Post 2 -->
+                  <div class="insta-post">
+                    <a href="https:www.instagram.com/lamadeleinemasquee" target="_blank">
+                      <img src="/assets/images/2.png" alt="Post Image"href="https://www.instagram.com/lamadeleinemasquee" target="_blank"></a>
+                  </div>
+
+                  <!-- Post 3 -->
+                  <div class="insta-post">
+                    <a href="https:www.instagram.com/lamadeleinemasquee" target="_blank">
+                      <img src="/assets/images/3.png" alt="Post Image" href="https://www.instagram.com/lamadeleinemasquee" target="_blank"></a>
+                  </div>
+              </div>
+          </div>
+</div>
+
       </div>
     </div>
   </div>
 
-
   <!-- Scripts -->
+
+  <script>
+  window.history.pushState({}, "", "/");
+
+  </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
