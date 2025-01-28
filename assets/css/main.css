@@ -696,6 +696,38 @@ Banner Style
 ---------------------------------------------
 */
 
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    justify-content: center;
+}
+
+.menu li {
+    padding: 10px 20px;
+}
+
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.menu li:not(:last-child)::after {
+    content: "|";
+    color: #33211D;
+    margin-left: 30px;
+}
+
+.menu a:hover {
+    color: #33211D;
+}
+
+
 .main-banner {
   background-repeat: no-repeat;
   background-position: center bottom;
