@@ -1072,6 +1072,40 @@ grid-column-end: 3;
 
 }
 }
+
+
+
+#popupMessage {
+         position: fixed;
+         top: 20%;
+         left: 50%;
+         transform: translateX(-50%);
+         background-color: rgba(0, 0, 0, 0.8);
+         color: white;
+         padding: 20px;
+         border-radius: 8px;
+         max-width: 80%;
+         width: auto;
+         display: none;
+         z-index: 9999;
+     }
+
+     #popupMessage h4 {
+         margin: 0;
+         text-align: center;
+     }
+
+     #popupCloseButton {
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         background: none;
+         border: none;
+         color: white;
+         font-size: 16px;
+         cursor: pointer;
+     }
+
 /*
 ---------------------------------------------
 cards
