@@ -68,6 +68,14 @@
       </div>
     </div>
   </header>
+
+  <div id="popupMessage">
+    <h4><br><br>La Madeleine Masquée fait actuellement une pause. <br>
+      La prise de commande est indisponible...
+     </h4>
+    <p><br><br>Merci pour ces 4 années icroyables !!!!</p>
+    <button id="popupCloseButton">&times; Close</button>
+</div>
   <!-- ***** Header Area End ***** -->
 <div style="display:none;"> la madeleine masquee, la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat madeleine marseille madeleine marseille madeleine marseille madeleine marseille madeleines marseille madeleines marseille madeleines marseille madeleines marseille madeleines marseille madeleines marseille </div>
   <div class="main-banner">
@@ -135,13 +143,25 @@
 
       </div>
     </div>
+
+
   </div>
 <div style="display:none;"> la madeleine masquee, la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat la madeleine de marseille, madeleines marseille chocolat madeleine marseille madeleine marseille madeleine marseille madeleine marseille madeleines marseille madeleines marseille madeleines marseille madeleines marseille madeleines marseille madeleines marseille </div>
   <!-- Scripts -->
 
   <script>
   window.history.pushState({}, "", "/");
+  window.history.pushState({}, "", "/");
 
+
+  window.onload = function () {
+      document.getElementById("popupMessage").style.display = "block";
+  };
+
+
+  document.getElementById("popupCloseButton").onclick = function () {
+      document.getElementById("popupMessage").style.display = "none";
+  };
   </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
