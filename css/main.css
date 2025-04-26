@@ -190,14 +190,15 @@ a:hover { color: #FF0; }
 
 
 .service-content {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15vh;
+  position: relative;
+  padding-top: 30vh;
+  text-align: center;
   background-image: url(../img/mad2.jpg);
-  background-attachment: fixed;
-  min-height: 100vh;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .service-content .left-text h4 {
@@ -264,8 +265,15 @@ h4, .h4 {
 
 
 .projects-content {
-  padding-top: 20vh;
+  position: relative;
+  padding-top: 30vh;
+  text-align: center;
   background-image: url(../img/coffrets.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .projects-content .item img {
@@ -395,10 +403,16 @@ section {
 
 
 .contact-content {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 16vh;
+  position: relative;
+  padding-top: 30vh;
+  text-align: center;
   background-image: url(../img/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+
 }
 
 .contact-form {
