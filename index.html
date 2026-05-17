@@ -16,22 +16,48 @@ h1, h2, h3, h4, h5, h6 {
 </head>
 <body>
 
-<div class="m2-top">
-  <div class="m2-bar m2-white m2-padding m2-card" style="letter-spacing:4px;">
-    <a href="#home" class="m2-bar-item m2-button">La Madeleine Masquée</a>
-    <div class="m2-right m2-hide-small">
-      <a href="#about" class="m2-bar-item m2-button">About</a>
-      <a href="#menu" class="m2-bar-item m2-button">Menu</a>
-      <a href="#contact" class="m2-bar-item m2-button">Contact</a>
+  <div class="m2-top">
+    <div class="m2-bar m2-white m2-padding m2-card" style="letter-spacing:4px;">
+
+      <a href="#home" class="m2-bar-item m2-button">
+        La Madeleine Masquée
+      </a>
+
+      <div class="m2-right m2-hide-small">
+        <a href="#about" class="m2-bar-item m2-button">About</a>
+        <a href="#menu" class="m2-bar-item m2-button">Menu</a>
+        <a href="#contact" class="m2-bar-item m2-button">Contact</a>
+      </div>
+
+      <a href="javascript:void(0)"
+         class="m2-bar-item m2-button m2-right m2-hide-medium m2-hide-large"
+         onclick="toggleMenu()" style="color:black;">
+        ☰
+      </a>
+    </div>
+
+    <div id="mobileMenu"
+         class="m2-bar-block m2-white m2-hide m2-hide-large m2-hide-medium">
+      <a href="#about" class="m2-bar-item m2-button" onclick="toggleMenu()">About</a>
+      <a href="#menu" class="m2-bar-item m2-button" onclick="toggleMenu()">Menu</a>
+      <a href="#contact" class="m2-bar-item m2-button" onclick="toggleMenu()">Contact</a>
     </div>
   </div>
-</div>
 
 <!-- Header -->
 <header class="m2-display-container m2-content m2-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="m2-image" src="/img/mad2.jpg" alt="Hamburger Catering" width="1600" height="400">
-  <div class="m2-display-bottomleft m2-padding-large m2-opacity">
-    <h1 class="m2-xxlarge" style="color:white;">La Madeleine Masquée</h1>
+  <div class="hero-container">
+    <img
+      class="hero-image"
+      src="/img/mad2.jpg"
+      alt="la madeleine masquee"
+    >
+
+    <div class="hero-text">
+      <h1>La Madeleine Masquée</h1>
+    </div>
+  </div>
+
   </div>
 </header>
 
@@ -65,10 +91,10 @@ h1, h2, h3, h4, h5, h6 {
       <p class="m2-text-grey">Assortiment de 16 madeleines de votre choix .....35.00</p><br>
 
       <h4>Écrin Douceur</h4>
-      <p class="m2-text-grey">Assortiment de 9 mini madeleines de votre choix .....10.00</p><br>
+      <p class="m2-text-grey">Assortiment de 9 mini madeleines  .....10.00</p><br>
 
         <h4>Écrin Gourmand</h4>
-      <p class="m2-text-grey">Assortiment de 25 mini madeleines de votre choix .....27.00</p><br>
+      <p class="m2-text-grey">Assortiment de 25 mini madeleines .....27.00</p><br>
 
     </div>
     <div class="m2-col l6 m2-padding-large">
@@ -150,6 +176,16 @@ h1, h2, h3, h4, h5, h6 {
 <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
+
+function toggleMenu() {
+  var x = document.getElementById("mobileMenu");
+  if (x.className.indexOf("m2-show") == -1) {
+    x.className += " m2-show";
+  } else {
+    x.className = x.className.replace(" m2-show", "");
+  }
+}
+x
     function openCity(cityName) {
         var i;
         var x = document.getElementsByClassName("city");
