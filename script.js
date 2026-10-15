@@ -453,7 +453,7 @@ const productData = [
         description:
             "Notre madeleine signature. Une texture moelleuse et un parfum délicatement vanillé.",
 
-        price: "18 €"
+        price: "-- €"
     },
 
     {
@@ -462,7 +462,7 @@ const productData = [
         description:
             "Une madeleine intense au chocolat noir, profonde et généreuse.",
 
-        price: "22 €"
+        price: "-- €"
     },
 
     {
@@ -471,7 +471,7 @@ const productData = [
         description:
             "La douceur du chocolat blanc",
 
-        price: "20 €"
+        price: "-- €"
     },
     {
         name: "La Moka",
@@ -479,7 +479,7 @@ const productData = [
         description:
             "La délicatesse de la madeleine au café... Idéale pour accompagner l'autre café!",
 
-        price: "20 €"
+        price: "-- €"
     },
     {
         name: "La Matcha",
@@ -487,7 +487,7 @@ const productData = [
         description:
             "Un peu de Japon avec votre madeleine?",
 
-        price: "20 €"
+        price: "-- €"
     }
 
 
